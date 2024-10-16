@@ -11,14 +11,14 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
+        google() // This is necessary for project dependencies
         mavenCentral()
     }
 }
 
 rootProject.name = "Food Calorie Management Application"
 include(":app")
- 
